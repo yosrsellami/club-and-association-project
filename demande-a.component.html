@@ -1,0 +1,14 @@
+<button routerLink="/admin"class="retour-btn" ><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+
+<div class="demande-bloc">
+  <div  *ngFor="let demande of demandes" class="content">
+    <h1 style="font-size: 20px;">nom du club ou association:{{demande.nom}}</h1>
+    <p>genre:{{demande.genre}}</p>
+    <p>localités:{{demande.localites}}</p>
+    <p>domaine:{{demande.domaine}}</p>
+
+    <div>
+    <button (click)="valider(demande)">valider</button>
+    <button (click)="supprimerDemande(demande.id)">supprimer</button></div>
+  </div>
+</div>

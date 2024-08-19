@@ -1,0 +1,22 @@
+<div class="container" >
+  <h2 style="align-content: center;" >Profile du club </h2><br>
+<form  >
+
+      <label for="username">Nom du club  </label><br/>
+      <input type="text"  id="nom" name="nom" [(ngModel)]="club.nom" required><br>
+
+      <label for="email">Président</label><br><br>
+      <input type="email"  id="email" name="email" [(ngModel)]="club.president" required><br>
+      <label for="password">les membres du bureau</label><br>
+      <input   id="password" name="password" [(ngModel)]="club.nommembreB" required><br>
+
+      <label for="password">les membres actifs</label><br>
+      <input type="text" id="nomduclub" name="nomduclub" [(ngModel)]="club.nommembreA" required><br><br>
+      <label for="password">description</label><br>
+      <textarea type="text" id="nomduclub" name="nomduclub" [(ngModel)]="club.description" required></textarea><br><br>
+      <label for="password">activitées</label><br>
+      <textarea type="text" id="nomduclub" name="nomduclub" [(ngModel)]="club.activites" required></textarea><br><br>
+      <input class="submit"     type="submit" value="modifier">
+
+  </form>
+</div>

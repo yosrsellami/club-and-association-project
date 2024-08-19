@@ -1,0 +1,21 @@
+<div class="container"  fxFlex="value%" fxFlexAlign="start">
+
+
+  <img src="assets/union.jpeg">
+
+  <form   (ngSubmit)="onSubmit()">
+<h1 style="margin-top: 5px;"> Connecter avec un compte </h1><br>
+<h3>Entrer les informations  de connexion :</h3><br>
+    <label for="email">Email</label><br><br>
+    <input type="email" [(ngModel)]="email" id="email" name="email"  required><br><br>
+
+    <label for="password">Mot De Passe</label><br><br>
+    <input type="password" [(ngModel)]="motdepasse" id="password" name="password" required><br><br> <br>
+
+    <input class="submit"     type="submit" value="CONNECTER">
+    <div *ngIf="isLoginFailed" class="alert alert-danger mt-3" role="alert">
+      {{ errorMessage }}
+    </div>
+</form>
+</div>
+

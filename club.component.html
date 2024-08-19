@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Simple</title>
+
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img class="logo1" src="assets/universite.jpeg" style="width: 175px;" alt="Logo">
+      <img class="logo2" src="assets/4cus.jpeg" style="width: 175px; margin-bottom: 35px;" alt="Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a routerLink="/home">Accueil</a></li>
+      <li><a routerLink="/club">club et association</a></li>
+      <li><a href="/reseau">réseau</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          connecter
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" style="font-size: 15px;" routerLink="/loginS">Secretaire général</a>
+          <a class="dropdown-item" style="font-size: 15px;" routerLink="/logina">Prèsident association locale</a>
+          <a class="dropdown-item" style="font-size: 15px;" routerLink="/loginc">Prèsident club ou association</a>
+          <a class="dropdown-item" style="font-size: 15px;" routerLink="/login">Membre club ou association</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          s'inscrire
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+          <a class="dropdown-item" style="font-size: 15px;" routerLink="/signupS">Secretaire général</a>
+          <a class="dropdown-item" style="font-size: 15px;" routerLink="/signupa">Prèsident association locale</a>
+          <a class="dropdown-item" style="font-size: 15px;" routerLink="/signupc">Prèsident club ou association</a>
+          <a class="dropdown-item" style="font-size: 15px;" routerLink="/signup">Membre club ou association</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="content">
+      <h1>Clubs et Associations</h1><br><br>
+      <p>‘Unis par la passion, ensemble pour l'action”</p><br>
+      <div class="second_p">
+        <p>Découvrez une nouvelle ère de gestion simplifiée pour les clubs universitaires et associations locales de la région de Sousse. Notre application offre une plateforme intuitive et centralisée pour créer, gérer et collaborer au sein d'un réseau dynamique.</p>
+      </div>
+    </div>
+  </div><br> <br>
+<div class="bloc2">
+  <h1 >Club et association</h1><br><br>
+  <p>Un « club universitaire » et une « association » sont tous deux des formes de groupes organisés formés<br>
+    autour d’intérêts ou d’objectifs partagés. Alors qu'un "club universitaire" fonctionne généralement<br>
+    dans un cadre universitaire et est souvent dirigé par des étudiants</p><br>
+    <div  style="display: flex; margin-inline-start: 2px; margin-left: 300px;" >
+    <img src="/assets/ass1.jpg"  class="bloc_img1">
+    <img src="/assets/club3.jpeg" style="margin-top: 55px;" class="bloc_img2">
+    <img src="/assets/ass3.png" class="bloc_img3" >
+</div>
+</div>
+
+
+<br><br><br><br>
+
+  <div class="filtre">
+    <label for="genre" >Choisir un genre:</label>
+    <select id="genre" (change)="onGenreChange($event)">
+      <option value="">Tous</option>
+      <option value="associations">association universitaire</option>
+      <option value="club universitaire">club universitaire</option>
+    </select>
+    <select id="genre" (change)="onetabliChange($event)">
+      <option value="">Tous</option>
+      <option value="Institut d'ingénieurs en électricité et électronique">Institut d'ingénieurs en électricité et électronique</option>
+      <option value="Polytechnique Sousse">polytechnique sousse</option>
+    </select>
+  </div><br><br>
+
+  <div class="club-container">
+    <div class="club" *ngFor="let club of clubs">
+      <h2 style="align-self: center;">{{ club.nom }}</h2>
+      <h3 class="p2">Nom du établissement: {{ club.nomduetablissement }}</h3>
+      <h3 class="p1">Président: {{ club.president }}</h3>
+      <h3 class="p1">type: {{ club.genre }}</h3>
+      <div *ngIf="club.showInfo">
+        <h3>Membres du bureau:</h3>
+        <p>{{ club.nommembreB }}</p>
+        <h3>Membres actifs:</h3>
+        <p>{{ club.nommembreA }}</p>
+        <p>{{ club.description }}</p>
+        <h3>Activités:</h3>
+        <p>{{ club.activites }}</p>
+        <button (click)="toggleClubInfo(club)">lire moins</button>
+      </div>
+      <button *ngIf="!club.showInfo" (click)="toggleClubInfo(club)">En Savoir Plus</button>
+    </div>
+  </div><br><br>
+  <button class="creation" routerLink="/loginc">créer un nouveau club</button><br><br><br>
+  <footer>
+    <div class="container1">
+      <div class="footer-content1">
+        <h3><i class="fa fa-university" aria-hidden="true"></i>Contactez-nous</h3>
+        <p><i class="fa fa-map-marker" aria-hidden="true"></i>Rue Khalifa El Karoui Sahloul - BP n° 526 – 4002 Sousse</p>
+        <p><i class="fa fa-phone" aria-hidden="true"></i>Téléphone : 73 368 126 </p>
+        <p><i class="fa fa-envelope" aria-hidden="true"></i>Email : universite.centre&#64;uc.rnu.tn</p>
+      </div>
+      <div class="footer-content">
+        <h3>Liens rapides</h3>
+        <ul style="margin-top: -25px; margin-left: 75px;">
+          <li><a href="#">Accueil</a></li><br>
+          <li><a href="#">clubs et associations</a></li><br>
+          <li><a href="#">réseau universitaire</a></li><br>
+          <li><a href="#">Contact</a></li><br>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <h3>Suivez-nous</h3>
+        <ul style="margin-top: -25px; margin-left: 75px;">
+          <li><i class="fa fa-facebook-official" aria-hidden="true"></i><a href="#">Facebook</a></li><br>
+          <li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="#">email</a></li><br>
+          <li><i class="fa fa-instagram" aria-hidden="true"></i><a href="#">Instagram</a></li><br>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<div class="demande-bloc">
+  <div  *ngFor="let demande of demande" class="content">
+    <h1>nom du club:{{demande.nom}}</h1>
+    <p>nom du ètablissement:{{demande.nomduetablissement}}</p>
+    <p>genre:{{demande.genre}}</p>
+    <p>prèsident:{{demande.president}}</p>
+    <p>les membres du bureau:{{demande.nommembreB}}</p>
+    <p>les membres actifs:{{demande.nommembreA}}</p>
+    <p>description:{{demande.description}}</p>
+    <p>activités:{{demande.activites}}</p>
+    <div>
+    <button (click)="validerclub(demande)">valider</button>
+    <button (click)="supprimerclub(demande.id)">supprimer</button></div>
+  </div>
+</div>

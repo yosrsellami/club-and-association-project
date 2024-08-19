@@ -1,0 +1,16 @@
+<h2 style="text-align: center;">Gérer les membres</h2>
+<div class="container">
+  <div class="bloc" *ngFor="let member of members">
+    <form>
+      <label for="nom-{{member.id}}"><i class="fa fa-user" aria-hidden="true"></i>Nom d'utilisateur</label><br>
+      <input type="text" id="nom-{{member.id}}" name="nom" [(ngModel)]="member.nom" required><br>
+
+     
+      <label for="role-{{member.id}}">Rôle</label><br>
+      <input type="text" id="role-{{member.id}}" name="role" [(ngModel)]="member.role" required><br><br>
+
+      <button class="submit" type="button" (click)="UpdateMember(member.id, member)">Modifier</button>
+      <button class="submit" type="button" (click)="supprimer(member.id)">Supprimer</button>
+    </form>
+  </div>
+</div>

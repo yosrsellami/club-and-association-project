@@ -1,0 +1,124 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Simple</title>
+  <link rel="stylesheet" >
+
+
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img  class="logo1"src="assets/universite.jpeg" alt="Logo">
+      <img class="logo2" src="assets/4cus.jpeg" alt="Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a routerLink="/home">Accueil</a></li>
+      <li><a routerLink="/club">club et association</a></li>
+      <li><a href="/reseau">réseau</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           connecter
+        </a>
+        <div class="dropdown-menu"  aria-labelledby="navbarDropdown">
+             <a class="dropdown-item" style="font-size: 15px;" routerLink="/loginS">Secretaire général</a>
+          <a class="dropdown-item" style="font-size: 15px;" routerLink="/logina">Prèsident association locale</a>
+          <a class="dropdown-item" style="font-size: 15px;" routerLink="/loginc">Prèsident club ou association</a>
+          <a class="dropdown-item" style="font-size: 15px;" routerLink="/login">Membre club ou association</a>
+
+          </div>
+      </li>
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        s'inscrie
+     </a>
+     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item"  style="font-size: 15px;" routerLink="/signupS">Secretaire général</a>
+       <a class="dropdown-item"  style="font-size: 15px;" routerLink="/signupa">Prèsident association locale</a>
+       <a class="dropdown-item" style="font-size: 15px;" routerLink="/signupc">Prèsident club ou association</a>
+       <a class="dropdown-item"style="font-size: 15px;"  routerLink="/signup">Membre club ou association</a>
+       </div>
+   </li>
+</ul>
+
+  </nav>
+
+  <div class="container"  >
+
+
+    <div class="content">
+      <h1>Réseau universitaire </h1><br><br>
+      <p>‘Unis par la passion, ensemble pour l'action” </p><br>
+      <div class="second_p">
+      <p>Découvrez une nouvelle ère de gestion simplifiée pour les clubs universitaires et associations locales de la région de Sousse. Notre application offre une plateforme intuitive et centralisée pour créer, gérer et collaborer au sein d'un réseau dynamique</p>
+    </div>
+    </div>
+  </div><br> <br>
+
+
+<div class="introduction" style="margin-left: 100px; margin-top: 255px;">
+  <div class="image">
+      <img src="assets/reseau.jpg" alt="Image 1">
+  </div><br> <br>
+  <div >
+
+       <h1>notre réseau</h1>
+
+  <p>L'Université de Sousse est fière de présenter son réseau dynamique et engagé, qui rassemble une multitude de clubs, d'associations universitaires et d'associations locales. Ce réseau vibrant est le reflet de la richesse de la vie étudiante sur le campus et de l'implication de la communauté universitaire dans la vie locale. À travers une panoplie d'activités, d'événements et d'initiatives, ce réseau offre aux étudiants, aux enseignants et au personnel de l'université de nombreuses opportunités de s'épanouir, de développer leurs talents et de contribuer positivement à leur environnement. Que ce soit dans les domaines culturels, sportifs, sociaux ou académiques, chacun peut trouver sa place et s'engager pour faire rayonner l'Université de Sousse au-delà de ses murs. Bienvenue dans cet écosystème dynamique, source d'inspiration et de fierté pour toute la communauté universitaire</p>
+  </div>
+
+
+</div>
+<br><br><br><br>
+
+
+  <div class="club-container">
+    <div class="club" *ngFor="let reseau of reseau" >
+      <h2 >Nom: {{reseau.nom}}</h2><br>
+      <p class="p1">Localité: {{ reseau.localites}}</p><br>
+      <p class="p3"> Domaine: {{reseau.domaine}}</p>
+    </div><br>
+
+  </div><br> <br><br>
+
+
+  <footer>
+    <div class="container1" >
+
+        <div class="footer-content1">
+            <h3><i class="fa fa-university" aria-hidden="true"></i>Contactez-nous</h3>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i>Rue Khalifa El Karoui Sahloul - BP n° 526 – 4002 Sousse</p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i>Téléphone : 73 368 126 </p>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i>Email : universite.centre&#64;uc.rnu.tn</p>
+
+            </div>
+
+
+
+
+        <div class="footer-content">
+            <h3>Liens rapides</h3>
+            <ul style="margin-top: -25px; margin-left: 75px;" >
+                <li><a href="#">Accueil</a></li><br>
+                <li><a href="#">clubs et associations </a></li><br>
+                <li><a href="#">réseau universitaire</a></li><br>
+                <li><a href="#">Contact</a></li><br>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h3>Suivez-nous</h3>
+            <ul style="margin-top: -25px; margin-left: 75px;">
+                <li><i class="fa fa-facebook-official" aria-hidden="true"></i><a href="#">Facebook</a></li><br>
+                <li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="#">email</a></li><br>
+                <li><i class="fa fa-instagram" aria-hidden="true"></i><a href="#">Instagram</a></li><br>
+            </ul>
+        </div>
+    </div>
+  </footer>
+
+</body>
+</html>

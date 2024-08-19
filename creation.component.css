@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+
+  height: 100%;
+  width: 100%;
+}
+.retour-btn {
+  background-color: #4f8be6; /* Couleur de fond */
+  border: none; /* Pas de bordure */
+  color: white; /* Couleur du texte */
+  padding: 15px 32px; /* Espacement interne */
+  text-align: center; /* Centrer le texte */
+  text-decoration: none; /* Pas de soulignement */
+  width: 75px;
+  height: 35px;
+  font-size: 16px; /* Taille de la police */
+  margin: 4px 2px; /* Marge externe */
+  cursor: pointer; /* Curseur en forme de main */
+  border-radius: 10px; /* Arrondi du coin */
+}
+
+.retour-btn:hover {
+  background-color: #45a049; /* Changement de couleur au survol */
+}
+
+
+.container {
+
+  height: 100%;
+  width: 40%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f4f4;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea,
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

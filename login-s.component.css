@@ -1,0 +1,70 @@
+.container{
+  /* Rectangle 47 */
+
+position: absolute;
+width: 1199px;
+height: 741px;
+left: 114px;
+top: 50x;
+
+background: #FFFFFF;
+box-shadow: 0px 17px 16.1px rgba(0, 0, 0, 0.25);
+border-radius: 48px;
+
+}
+h1{
+  Width:466px;
+Height:28px;
+
+Left:794px;
+Font:Poppins;
+
+Size:50px;
+size: height 75px;
+}
+/* unsplash:KVIlNRoGwxk */
+img{
+  Width:599px;
+  Height:641px;
+  Top:141px;
+  Left:113px;
+  padding: 47px
+}
+ /* REGISTER */
+form{
+  margin-top: 25px;
+position: absolute;
+Width:369px;
+Height:56px;
+Top:70px;
+Left:694px;
+padding:13px;}
+
+label{
+
+font-family: 'Istok Web';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 26px;
+
+color: #090909;
+}
+input{
+  Width:369px;
+Height:26px;
+Top:370px;
+Left:794px;
+padding:13px;
+
+box-shadow: 0px 4px 4px rgba(203, 200, 200, 0.25);
+border-radius: 13px;
+}
+.submit{
+  Width:169px;
+  Height:58px;
+  Top:729px;
+  Left:794px;
+  padding:13px;
+   background-color: #5A6E97;
+}

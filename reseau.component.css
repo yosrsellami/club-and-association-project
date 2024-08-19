@@ -1,0 +1,466 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #ffffff; /* Fond blanc */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between; /* Alignement des éléments */
+  align-items: center;
+}
+.logo1{
+  Width:225px;
+height:100px;
+margin-top: 15px;
+Left:-2px
+}
+.logo2{
+  Width:200px;
+height:110px;
+margin-top: -3px;
+Left:-2px
+}
+.navbar .nav-links {
+  float: right;
+  list-style-type: none;
+}
+
+.navbar .nav-links li {
+  float: left;
+  font-size: 25px;
+}
+
+.navbar .nav-links li a {
+  display: block;
+  color: #3530a5;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar .nav-links li a:hover {
+  background-color: #ddd;
+  color: #432aa7;
+}
+
+.navbar .nav-links .dropdown {
+  position: relative;
+}
+
+.navbar .nav-links .dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.navbar .nav-links .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar .nav-links .dropdown .dropdown-menu a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar .nav-links .dropdown .dropdown-menu a:hover {
+  background-color: #ddd;
+}
+
+.connecter{
+/* Light/Button */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 11px 24px;
+
+width: 142px;
+height: 48px;
+
+background: #1C75BC;
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.container {
+  /* Rectangle 2062 */
+
+  position: cover;
+  width: 100%;
+  height: 1012px;
+  left: -2px;
+  top: 143px;
+
+
+  background: url(/assets/reseau.jpeg ), #D9D9D9;
+  background-size: cover;
+  align-self: center;
+  }
+
+
+
+  .content {
+
+
+  position: absolute;
+  width: 1053px;
+  height: 406px;
+  left: 196px;
+  top: 346px;
+  }
+  .content h1{
+    /* Club et Association */
+
+  position: absolute;
+  width: 1053px;
+  height: 159px;
+  left: 106px;
+  top: 46px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 106.4%;
+  /* or 102px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #1C75BC;
+
+  }
+  .content p{
+    /* ‘Unis par la passion, ensemble pour l'action”  */
+
+  position: absolute;
+  width: 540px;
+  height: 56.99px;
+  left: 300px;
+  top: 230px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 106.4%;
+  /* or 43px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+
+
+  }
+
+  .second_p p{
+    /* We are a new merchants association in Central Brooklyn dedicated to promoting and supporting local businesses, while creating economic opportunities for low to moderate-income households. Our goal is to build a thriving local economy that benefits everyone in the community. */
+
+  position: absolute;
+  width: 580px;
+  height: 20px;
+  left: 300px;
+  top: 350px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+
+  }
+  .filtre{
+    margin-left: 350px;
+    display: flex;
+
+  }
+  .filtre select{
+    width: 450px;
+    height: 55px;
+    margin-block-end: 5px;
+   padding-left: 5px;
+   margin-block: 5px;
+
+  }
+  .club-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 3px solid #2B2E40;
+    border-radius: 18px;
+    gap: 20px; /* Add gap between items for better spacing */
+  }
+
+  .club {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33.333% - 40px); /* Adjusted to ensure proper spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fb;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .club:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .club h2 {
+    margin-top: 0;
+    font-size: 20px;
+    text-align: center;
+    color: #2B2E40;
+    font-weight: bold;
+  }
+
+  .p2, .p1, .p3 {
+    font-size: 15px;
+    margin: 10px 0;
+  }
+
+  .p2 {
+    width: 100%; /* Adjusted to fit within the container */
+  }
+
+  @media (max-width: 768px) {
+    .club {
+      width: calc(50% - 30px); /* Adjusted for tablets and smaller screens */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .club {
+      width: calc(100% - 20px); /* Adjusted for mobile screens */
+    }
+  }
+
+.introduction {
+  color:
+  #EEEEEE;
+
+
+}
+
+.image {
+  margin-bottom: 20px;
+  margin-left: 25px;
+
+}
+
+.image img {
+  margin-left: 2px;
+  Width:517.38px;
+  Height:400.85px;
+
+}
+.introduction h1{
+  /* Heading */
+
+position: absolute;
+width: 435px;
+height: 33px;
+left: 800px;
+top: 1420px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 900;
+font-size: 60px;
+line-height: 37px;
+/* or 155% */
+
+color: #EF3E23;
+}
+.image h3{
+  /* Heading */
+
+position: absolute;
+width: 509.92px;
+height: 72.97px;
+left: 800.68px;
+top: 1490px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 41px;
+/* or 102% */
+
+color: #000000;
+
+
+}
+.introduction p{
+  /* Little Bangladesh Merchants Association is built on a strong foundation of community engagement, partnerships, and a commitment to sustainable development. And with a strong belief in bringing civic and economic opportunities for the residents and to the stakeholders and our other partners. Our mission is to elevate businesses in the neighborhood by coming up with a collaborative and inclusive environment where businesses can thrive. We are on our way to building long-term partnerships with local businesses and organizations, providing them with the resources and support they need to achieve their goals. Additionally. */
+
+position: absolute;
+width: 594px;
+height: 256px;
+left: 800px;
+top: 1500px;
+
+/* Regular/16px */
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 26px;
+/* or 162% */
+
+/* gray/900 */
+color: #18181B;
+
+
+}
+
+
+
+.club {
+  background-color: #fcf8f8;
+  border: 1px solid #4532e9;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  max-width: 100%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.club h2 {
+  margin-top: 0;
+  text-align: center;
+  color:#1C75BC
+}
+.p2{
+  text-align: center;
+
+  color: #555;
+}
+.p1{
+
+  text-align: center;
+
+  color: #555;
+
+
+
+}
+
+.p3{
+ text-align: center;
+
+ color: #555;
+}
+
+
+
+
+.container1{
+  display: flex;
+  /* Group 2081 */
+
+position: absolute;
+width: 100%;
+height: 467.08px;
+
+
+background-color: #EEEEEE;
+
+}
+.footer-content{
+
+
+  width: 448px;
+  height: 220.18px;
+  left: 424.61px;
+
+  margin-top: 95px;
+
+
+
+  }
+  .footer-content1{
+
+
+    width: 448px;
+    height: 220.18px;
+    left: 424.61px;
+    top: 220.39px;
+    margin-top: 75px;
+    margin-left: 75px;
+
+
+
+    }
+  .container1 h3{
+
+  width: 400px;
+  height: 20px;
+  left: 377.83px;
+  top: 30.39px;
+  margin-bottom: 75px;
+  margin-inline-start: 75px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24.1319px;
+  line-height: 20px;
+  /* identical to box height, or 138% */
+  letter-spacing: 1.08707px;
+  text-transform: uppercase;
+
+  color: #EF3E23;
+
+
+  }
+  .container1  li a{
+    /* About Features Works */
+
+
+  width: 548px;
+  height: 168px;
+  left: 824.61px;
+
+  margin-top: -5px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20.219px;
+  line-height: 24px;
+  color: #343494;
+
+  }
+  i {
+    margin-left: 15px;
+    width: 35px;
+
+  }
+
+

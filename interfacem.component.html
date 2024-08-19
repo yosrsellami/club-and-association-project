@@ -1,0 +1,23 @@
+<div class="container" >
+  <h2 style="align-content: center;" >Profile du membre </h2><br>
+<form  >
+
+      <label for="username">Nom d'utilisateur  </label><br/>
+      <input type="text"  id="nom" name="nom" [(ngModel)]="member.nom" required><br>
+
+      <label for="email">Email</label><br><br>
+      <input type="email"  id="email" name="email" [(ngModel)]="member.email" required><br>
+
+
+
+      <label for="password">Nom du club</label><br>
+      <input   id="password" name="password" [(ngModel)]="member.nomduclub" required><br>
+
+      <label for="password">Role</label><br>
+      <input type="text" id="nomduclub" name="nomduclub" [(ngModel)]="member.role" required><br><br>
+
+      <input class="submit"     type="submit" value="modifier">
+
+  </form>
+</div>
+

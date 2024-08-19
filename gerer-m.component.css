@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+box-sizing: border-box;
+margin-top: -40px;
+background: #FFFFFF;
+border: 3px solid #2B2E40;
+border-radius: 18px;
+
+}
+.bloc{
+  background-color: #f4f6fa;
+  margin-bottom: 25px;
+  margin-top: 45px;
+}
+.form {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(93, 55, 55, 0.1);
+  background-color: #dcdfed;
+}
+h2{
+
+Height:5px;
+color: #a966ca;
+Left:794px;
+bottom: 250px;
+Font:Poppins;
+Size:5px;
+size: height 25px;
+}
+
+
+
+
+label{
+
+font-family: 'Istok Web';
+font-style: normal;
+font-weight: 200;
+font-size: 25px;
+line-height: 26px;
+
+color: #090909;
+}
+input{
+  Width:369px;
+Height:15px;
+Top:370px;
+Left:794px;
+padding:13px;
+
+box-shadow: 0px 4px 4px rgba(203, 200, 200, 0.25);
+border-radius: 13px;
+}
+.submit{
+  Width:169px;
+  Height:48px;
+  Top:729px;
+  Left:794px;
+  padding:13px;
+   background-color: #b192bf;
+}

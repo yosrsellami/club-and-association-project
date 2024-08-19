@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un nouveau club</title>
+
+</head>
+<body>
+<button routerLink="/home" class="retour-btn" ><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+    <div class="container">
+
+        <h2>Créer un nouveau club ou association</h2>
+        <form #demandeForm="ngForm" (ngSubmit)="onSubmit(demandeForm)">
+            <div class="form-group">
+                <label for="nom">Nom du club:</label>
+                <input type="text"  [(ngModel)]="demande.nom" id="nom" name="nom" required>
+            </div>
+            <div class="form-group">
+              <label for="nom">Nom du ètablissement:</label>
+              <input type="text" [(ngModel)]="demande.nomduetablissement" id="nom" name="nom" required>
+          </div>
+          <div class="form-group">
+            <label for="nom">Genre:</label>
+            <input type="text"  [(ngModel)]="demande.genre"id="nom" name="nom" required>
+        </div>
+        <div class="form-group">
+          <label for="nom">Prèsident:</label>
+          <input type="text" [(ngModel)]="demande.president" id="nom" name="nom" required>
+      </div>
+
+      <div class="form-group">
+        <h2>ajouter les membres du bureau</h2>
+        <label for="nom">Nom des membres et ses rôles:</label>
+        <input type="text"  [(ngModel)]="demande.nommembreB"id="nom" name="nom" required>
+
+    <div>
+      <div class="form-group">
+        <h2>ajouter des membres actifs</h2>
+        <label for="nom">Nom du membre:</label>
+        <input type="text"  [(ngModel)]="demande.nommembreA"id="nom" name="nom" required>
+    </div>
+    </div>
+  </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" [(ngModel)]="demande.description" name="description" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="description">Activités:</label>
+              <textarea id="description"  [(ngModel)]="demande.activites" name="description" rows="4" required></textarea>
+          </div>
+
+
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</body>
+</html>
+

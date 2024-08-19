@@ -1,0 +1,19 @@
+<div class="club-container">
+  <div class="club" *ngFor="let membre of members">
+    <form >
+      <div class="block">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" [(ngModel)]="membre.nom">
+      </div>
+      <div>
+        <label for="nomduclub">Nom du club:</label>
+        <input type="text" id="nomduclub" name="nomduclub" [(ngModel)]="membre.nomduclub">
+      </div>
+      <div>
+        <label for="role">Role:</label>
+        <input type="text" id="role" name="role" [(ngModel)]="membre.role">
+      </div>
+      <button type="submit">Update</button>
+    </form>
+  </div>
+</div>

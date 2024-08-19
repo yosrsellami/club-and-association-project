@@ -1,0 +1,59 @@
+<nav class="navbar">
+  <div class="logo">
+    <img  class="logo1"src="assets/universite.jpeg" alt="Logo">
+    <img class="logo2" src="assets/4cus.jpeg" alt="Logo">
+  </div>
+  <ul class="nav-links">
+    <li><a routerLink="/home">Réseau universiatire</a></li>
+    <li><a routerLink="/demandea">les demandes</a></li>
+</ul>
+</nav>
+<div class="club-container">
+  <div class="club" *ngFor="let reseau of reseau" >
+    <h2 style="align-self: center;">nom:{{reseau.nom}}</h2>
+    <p class="p2">type:{{reseau.genre}}</p>
+    <p class="p1">localité:{{ reseau.localites}}</p>
+    <p class="p3"> domaine:{{reseau.domaine}}</p>
+ 
+
+  </div><br>
+
+</div><br> <br><br>
+
+
+<footer>
+  <div class="container1" >
+
+      <div class="footer-content1">
+          <h3><i class="fa fa-university" aria-hidden="true"></i>Contactez-nous</h3>
+          <p><i class="fa fa-map-marker" aria-hidden="true"></i>Rue Khalifa El Karoui Sahloul - BP n° 526 – 4002 Sousse</p>
+          <p><i class="fa fa-phone" aria-hidden="true"></i>Téléphone : 73 368 126 </p>
+          <p><i class="fa fa-envelope" aria-hidden="true"></i>Email : universite.centre&#64;uc.rnu.tn</p>
+
+          </div>
+
+
+
+
+      <div class="footer-content">
+          <h3>Liens rapides</h3>
+          <ul style="margin-top: -25px; margin-left: 75px;" >
+              <li><a href="#">Accueil</a></li><br>
+              <li><a href="#">clubs et associations </a></li><br>
+              <li><a href="#">réseau universitaire</a></li><br>
+              <li><a href="#">Contact</a></li><br>
+          </ul>
+      </div>
+      <div class="footer-content">
+          <h3>Suivez-nous</h3>
+          <ul style="margin-top: -25px; margin-left: 75px;">
+              <li><i class="fa fa-facebook-official" aria-hidden="true"></i><a href="#">Facebook</a></li><br>
+              <li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="#">email</a></li><br>
+              <li><i class="fa fa-instagram" aria-hidden="true"></i><a href="#">Instagram</a></li><br>
+          </ul>
+      </div>
+  </div>
+</footer>
+
+
+

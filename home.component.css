@@ -1,0 +1,385 @@
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #ffffff; /* Fond blanc */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between; /* Alignement des éléments */
+  align-items: center;
+}
+.logo1{
+  Width:225px;
+height:100px;
+margin-top: 15px;
+Left:-2px
+}
+.logo2{
+  Width:200px;
+height:110px;
+margin-top: -3px;
+Left:-2px
+}
+.navbar .nav-links {
+  float: right;
+  list-style-type: none;
+}
+
+.navbar .nav-links li {
+  float: left;
+  font-size: 25px;
+}
+
+.navbar .nav-links li a {
+  display: block;
+  color: #3530a5;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar .nav-links li a:hover {
+  background-color: #ddd;
+  color: #432aa7;
+}
+
+.navbar .nav-links .dropdown {
+  position: relative;
+}
+
+.navbar .nav-links .dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.navbar .nav-links .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar .nav-links .dropdown .dropdown-menu a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar .nav-links .dropdown .dropdown-menu a:hover {
+  background-color: #ddd;
+}
+
+
+
+.container {
+/* Rectangle 2062 */
+
+position: cover;
+width: 100%;
+height: 1012px;
+left: -2px;
+top: 143px;
+
+
+background: url(/assets/club.jpeg ), #D9D9D9;
+background-size: cover;
+align-self: center;
+}
+
+
+
+.content {
+
+
+position: absolute;
+width: 1053px;
+height: 406px;
+left: 196px;
+top: 346px;
+}
+.content h1{
+  /* Club et Association */
+
+position: absolute;
+width: 1053px;
+height: 159px;
+left: 106px;
+top: 46px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 900;
+font-size: 96px;
+line-height: 106.4%;
+/* or 102px */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #1C75BC;
+
+}
+.content p{
+  /* ‘Unis par la passion, ensemble pour l'action”  */
+
+position: absolute;
+width: 540px;
+height: 56.99px;
+left: 300px;
+top: 230px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 900;
+font-size: 40px;
+line-height: 106.4%;
+/* or 43px */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+}
+
+.second_p p{
+  /* We are a new merchants association in Central Brooklyn dedicated to promoting and supporting local businesses, while creating economic opportunities for low to moderate-income households. Our goal is to build a thriving local economy that benefits everyone in the community. */
+
+position: absolute;
+width: 580px;
+height: 20px;
+left: 300px;
+top: 350px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 100;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.introduction {
+  color:
+  #EEEEEE;
+
+}
+
+.image {
+  margin-bottom: 20px;
+
+}
+
+.image img {
+  margin-left: 2px;
+  Width:317.38px;
+  Height:300.85px;
+
+}
+.image h1{
+  /* Heading */
+
+position: absolute;
+width: 435px;
+height: 33px;
+left: 800px;
+top: 1420px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 900;
+font-size: 60px;
+line-height: 37px;
+/* or 155% */
+
+color: #EF3E23;
+}
+.image h3{
+  /* Heading */
+
+position: absolute;
+width: 509.92px;
+height: 72.97px;
+left: 800.68px;
+top: 1490px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 41px;
+/* or 102% */
+
+color: #000000;
+
+
+}
+.image p{
+  /* Little Bangladesh Merchants Association is built on a strong foundation of community engagement, partnerships, and a commitment to sustainable development. And with a strong belief in bringing civic and economic opportunities for the residents and to the stakeholders and our other partners. Our mission is to elevate businesses in the neighborhood by coming up with a collaborative and inclusive environment where businesses can thrive. We are on our way to building long-term partnerships with local businesses and organizations, providing them with the resources and support they need to achieve their goals. Additionally. */
+
+position: absolute;
+width: 594px;
+height: 256px;
+left: 800px;
+top: 1560px;
+
+/* Regular/16px */
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 26px;
+/* or 162% */
+
+/* gray/900 */
+color: #18181B;
+
+
+}
+.bloc{
+  /* Rectangle 2132 */
+
+position: absolute;
+width: 100%;
+height: 874px;
+
+top: 2115px;
+
+background: rgba(32, 57, 117, 0.74);
+
+}
+
+.p{
+  margin-top: 25px;
+  margin-left: 550px;
+  font-style: italic;
+  font-size: 25px;
+  color: #D9D9D9;
+}
+
+.nous img{
+width: 196px;
+height: 125.95px;
+margin-top: 105px;
+margin-left: 175px;
+
+}
+.association{
+margin-top: -250px;
+  margin-left: 540px;
+
+}
+.association img{
+  margin-top: 100px;
+  width: 200px;
+  height: 275px;
+}
+.vie{
+  margin-top: -200px;
+  margin-left: 1000px;
+}
+.vie img{
+  width:225px;
+  height:175px
+}
+.container1{
+  display: flex;
+  /* Group 2081 */
+
+position: absolute;
+width: 100%;
+height: 467.08px;
+top: 3000px;
+background-color: #EEEEEE;
+
+}
+.footer-content{
+
+
+width: 448px;
+height: 220.18px;
+left: 424.61px;
+top: 420.39px;
+margin-top: 95px;
+
+
+
+}
+.footer-content1{
+
+
+  width: 448px;
+  height: 220.18px;
+  left: 424.61px;
+  top: 220.39px;
+  margin-top: 75px;
+  margin-left: 75px;
+
+
+
+  }
+.container1 h3{
+
+width: 400px;
+height: 20px;
+left: 377.83px;
+top: 30.39px;
+margin-bottom: 75px;
+margin-inline-start: 75px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 24.1319px;
+line-height: 20px;
+/* identical to box height, or 138% */
+letter-spacing: 1.08707px;
+text-transform: uppercase;
+
+color: #EF3E23;
+
+
+}
+.container1  li a{
+  /* About Features Works */
+
+
+width: 548px;
+height: 168px;
+left: 824.61px;
+
+margin-top: -5px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 20.219px;
+line-height: 24px;
+color: #343494;
+
+}
+i {
+  margin-left: 15px;
+  width: 35px;
+
+}
+
+
+
+
+
+
+
+
+
+

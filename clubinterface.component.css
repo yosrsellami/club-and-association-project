@@ -1,0 +1,27 @@
+body
+{
+  width: 100%;
+  height: 100%;
+}
+/* profile.component.css */
+div {
+  border: 1px solid #89bdf8;
+  background-color: #a2c8f7;
+  padding: 16px;
+  border-radius: 8px;
+  max-width: 700px;
+  height: 650px;
+  margin: auto;
+  text-align: center;
+}
+
+input {
+  font-size: 24px;
+  height: 35px;
+  margin-bottom: 8px;
+}
+.submit{
+  background-color: #3a7fd4;
+}
+
+
